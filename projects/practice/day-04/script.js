@@ -1,21 +1,21 @@
-// const myPromise = new Promise((resolve,reject)=>{
+const myPromise = new Promise((resolve,reject)=>{
 
-//   const randomNumber = Math.ceil(Math.random() * 10)
-//   if(randomNumber > 5){
-//     resolve('this Number is bigger of 5' + ' ' + randomNumber)
-//   }else{
-//     reject('error' + ' ' + randomNumber)
-//   }
-// })
-// const userLogin = (mess)=>{
-//   console.log(mess);
-// }
+  const randomNumber = Math.ceil(Math.random() * 10)
+  if(randomNumber > 5){
+    resolve('this Number is bigger of 5' + ' ' + randomNumber)
+  }else{
+    reject('error' + ' ' + randomNumber)
+  }
+})
+const userLogin = (mess)=>{
+  console.log(mess);
+}
 
-// const errorLogin = (mess)=>{
-//   console.log(mess);
-// }
+const errorLogin = (mess)=>{
+  console.log(mess);
+}
 
-// myPromise.then(userLogin).catch(errorLogin)
+myPromise.then(userLogin).catch(errorLogin)
 
 const getUser = (id)=>{
   return new Promise(
