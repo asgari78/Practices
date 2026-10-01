@@ -1,0 +1,14 @@
+# Ignore everything in the root directory
+/*
+
+# Do not ignore the .gitignore file itself
+!.gitignore
+
+# Allow access to the 'projects' folder
+!projects/
+
+# Allow access to the 'practice' folder inside 'projects'
+!projects/practice/
+
+# Allow tracking all files within the 'practice' folder
+!projects/practice/**
