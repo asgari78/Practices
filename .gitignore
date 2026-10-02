@@ -1,1 +1,53 @@
-# Empty or minimal ignore for now
+# ==========================================
+# 1. Ignore EVERYTHING at Root
+# ==========================================
+/*
+
+# ==========================================
+# 2. Allow Git to track ONLY projects/practice
+# ==========================================
+!/projects/
+/projects/*
+!/projects/practice/
+!/projects/practice/**
+
+# ==========================================
+# 3. Exclude React / Next.js / Node.js junk inside practice
+# ==========================================
+# Dependencies
+**/node_modules/
+**/.pnp
+**/.pnp.js
+
+# Production & Build outputs
+**/dist/
+**/build/
+**/out/
+**/.next/
+
+# Environment Variables & Secrets
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+**/.env*.local
+
+# Logs & Debug
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# Caches & Temp files
+**/.turbo/
+**/.cache/
+**/.parcel-cache/
+**/.eslintcache/
+
+# OS / Editor junk
+**/.DS_Store
+**/Thumbs.db
+**/.vscode/*
+!**/.vscode/extensions.json
+!**/.vscode/settings.json
